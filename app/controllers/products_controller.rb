@@ -22,11 +22,27 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if @product.save
+      flash[:notice] = "#{@product.name} has been added!"
       redirect_to '/'
     else
       render :new
     end
   end
+
+  def edit
+    @product = Product.find(params[:id])
+  end
+
+  def update
+    @product = Product.find(params[:id])
+    if @product.update!(product_params)
+      flash[:notice] = "#{@product.name} was updated!"
+      redirect_to product_path(@product)
+    else
+      render :edit
+    end
+  end
+
 
   private
   def product_params
