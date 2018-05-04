@@ -10,6 +10,8 @@
   <div id="cost-box">
     <p>Your Total: <%= number_to_currency current_order.total_price %></p>
   </div>
+  <p>
+<%= link_to "Click here to pay", new_charge_path %></p> <br>
   <p><%= link_to "Finalize order", finalize_path %></p>
 <% else %>
   <p>Your shopping cart is empty.</p>
