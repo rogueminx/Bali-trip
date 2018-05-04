@@ -2,7 +2,11 @@
   Name: <%= f.text_field :name %>
   Description: <%= f.text_field :description %>
   Price: <%= f.number_field :price %>
+  Photo <%= f.file_field :image %>
+  <br>
+<span class="waves-effect waves-light btn">
 <%= f.submit "Submit" %>
+</span>
 <% end %>
 <br>
 <div class="delete-box">

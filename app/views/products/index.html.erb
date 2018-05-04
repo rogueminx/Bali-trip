@@ -8,7 +8,9 @@
       <% if admin %>
         <p><%= link_to "Edit", edit_product_path(product) %></p>
       <% end %>
-      <div id="product_description_<%= product.id %>">
+      <div id="product_description_<%= product.id %>" class="hidden">
+        <p><%= product.description %></p>
+        <p><%= image_tag product.image.url(:medium) %></p>
       </div>
       <p><%= number_to_currency product.price %></p>
       <%= form_for @order_item, remote: true do |f| %>
