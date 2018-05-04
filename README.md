@@ -20,8 +20,8 @@ Debugging a web-app previously created by another coder.
 
 - [x] Ensure that users can't order a negative number of items.
 - [x] Add flash messages for signing up, signing in and signing out.
-- [ ] Add product update and delete functionality for admins.
-- [ ] Add admin flash messages for adding, updating and deleting products.
+- [x] Add product update and delete functionality for admins.
+- [x] Add admin flash messages for adding, updating and deleting products.
 - [ ] Add Paperclip for product image upload.
 - [ ] Allow other than whole dollar amounts for admin product creation (for instance, 3.99).
 - [ ] Add product validations.

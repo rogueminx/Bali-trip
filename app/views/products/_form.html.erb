@@ -4,3 +4,12 @@
   Price: <%= f.number_field :price %>
 <%= f.submit "Submit" %>
 <% end %>
+<br>
+<div class="delete-box">
+<% if admin && @product.name != nil %>
+<p><%= link_to "DELETE THIS PRODUCT", product_path(@product), :data => {
+  :confirm => "Are you sure?",
+  :method => "delete"} %>
+</p>
+<% end %>
+</div>

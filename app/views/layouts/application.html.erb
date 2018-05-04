@@ -15,7 +15,11 @@
         </span>
       </ul>
       <ul>
-        <li><%= link_to "See all products", products_path %></li>
+        <li><%= link_to "PRODUCTS", products_path %></li>
+        <% if admin %>
+        <li><%= link_to "ADD PRODUCTS", new_product_path%>
+        </li>
+        <% end %>
         <% if current_user %>
           <li><%= current_user.name %></li>
           <li><%= link_to "Sign out", '/sign_out' %></li>
