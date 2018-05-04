@@ -13,7 +13,7 @@
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-description="STUFF! YAY!"
-          data-amount="<%= (@price * 100) %>"
+          data-amount="<%= @price * 100 %>"
           data-zip-code="true"
           data-locale="auto"></script>
 <% end %>

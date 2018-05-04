@@ -4,7 +4,7 @@
 
   Name: <%= f.text_field :name %>
   Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
+  Password (6 characters long and include one number and one letter): <%= f.password_field :password %>
   Password Confirmation: <%= f.password_field :password_confirmation %>
   <span class="waves-effect waves-light btn"><%= f.submit "Sign up" %></span>
 <% end %>

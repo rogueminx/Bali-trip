@@ -26,9 +26,10 @@ Debugging a web-app previously created by another coder.
 - [x] Allow other than whole dollar amounts for admin product creation (for instance, 3.99).
 - [x] Add product validations.
 - [x] Add Stripe so users can pay when finalizing orders.
-- [ ] Add password validations to ensure a user's password is sufficiently complex.
+- [x] Add password validations to ensure a user's password is sufficiently complex.
 - [x] Add admin links to navbar (and other spots) so admins can easily add, update and delete products.
 - [ ] Fix the row height for products, which can quickly become uneven.
+- [x] Add error message for failed signin
 - [x] Crushed it.
 
 
