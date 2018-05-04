@@ -12,7 +12,7 @@ Ruby/ Rails Independent Friday Project
 
 Debugging a web-app previously created by another coder.
 
-##### List of bug and refactoring
+##### List of bugs and refactoring tasks
 
 - [x] Users should be able to add products to their shopping cart from the index page with AJAX. The item should be added to the shopping cart and the number of items in the cart (shown in the navbar) should update.
 - [x] Users should be able to click on a product and show/hide the product detail using AJAX. The product detail should include an image (either Paperclip or an image link), the description, and any other fields you choose to add.
@@ -22,12 +22,12 @@ Debugging a web-app previously created by another coder.
 - [x] Add flash messages for signing up, signing in and signing out.
 - [x] Add product update and delete functionality for admins.
 - [x] Add admin flash messages for adding, updating and deleting products.
-- [ ] Add Paperclip for product image upload.
+- [x] Add Paperclip for product image upload.
 - [ ] Allow other than whole dollar amounts for admin product creation (for instance, 3.99).
 - [ ] Add product validations.
 - [ ] Add Stripe so users can pay when finalizing orders.
 - [ ] Add password validations to ensure a user's password is sufficiently complex.
-- [ ] Add admin links to navbar so admins can easily add, update and delete products.
+- [x] Add admin links to navbar (and other spots) so admins can easily add, update and delete products.
 - [ ] Fix the row height for products, which can quickly become uneven.
 - [ ] Add integration testing for AJAX functionality.
 - [ ] Add further AJAX functionality where it might be useful.
@@ -38,7 +38,7 @@ Debugging a web-app previously created by another coder.
 * Move to desired folder
 * Type  _`$ git clone https://github.com/dlewiski/adopt-an-animal.git`_
 * Type _`$ cd adopt-an-animal`_ to move to directory.
-* Type _`bundle exec`_ to install all necessary gems
+* Type _`bundle install`_ to install all necessary gems
 * Type _`rails db:create`_ to create the database.
 * Type _`rails db:migrate`_ to run migrations for database
 * To view the website, type : _`$ rails server `_ and navigate to `http://localhost:3000/`

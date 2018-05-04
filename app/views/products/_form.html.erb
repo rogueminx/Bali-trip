@@ -1,7 +1,7 @@
 <%= form_for @product do |f| %>
   Name: <%= f.text_field :name %>
   Description: <%= f.text_field :description %>
-  Price: <%= f.number_field :price %>
+  Price: <%= f.number_field :price, class: :text_field, step: :any %>
   Photo <%= f.file_field :image %>
   <br>
 <span class="waves-effect waves-light btn">
