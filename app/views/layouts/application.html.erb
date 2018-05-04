@@ -10,12 +10,14 @@
   <nav>
     <div class="nav-wrapper">
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <div id="shopping_cart">
+        <span id="shopping_cart">
           <li><%= link_to "Cart | Total items: #{ cart_items }", cart_path %></li>
-        </div>
+        </span>
+      </ul>
+      <ul>
         <li><%= link_to "See all products", products_path %></li>
         <% if current_user %>
-          <li><%= current_user.email %></li>
+          <li><%= current_user.name %></li>
           <li><%= link_to "Sign out", '/sign_out' %></li>
         <% else %>
           <li><%= link_to "Sign up", 'sign_up' %></li>
