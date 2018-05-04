@@ -23,7 +23,7 @@ Debugging a web-app previously created by another coder.
 - [x] Add product update and delete functionality for admins.
 - [x] Add admin flash messages for adding, updating and deleting products.
 - [x] Add Paperclip for product image upload.
-- [ ] Allow other than whole dollar amounts for admin product creation (for instance, 3.99).
+- [x] Allow other than whole dollar amounts for admin product creation (for instance, 3.99).
 - [ ] Add product validations.
 - [ ] Add Stripe so users can pay when finalizing orders.
 - [ ] Add password validations to ensure a user's password is sufficiently complex.
