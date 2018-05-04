@@ -23,7 +23,11 @@ class OrderItemsController < ApplicationController
     @item = @order.order_items.find(params[:id])
     @item.destroy
     @order.save
-    redirect_to cart_path
+    respond_to do |format|
+      format.html { redirect_to cart_path}
+      format.js { render :file => "carts/destroy.js.erb", data: {@item => @item}}
+      format.js { render :file => "layouts/destroy.js.erb" }
+    end
   end
 
   private
